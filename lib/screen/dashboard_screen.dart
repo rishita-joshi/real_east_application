@@ -3,6 +3,7 @@ import 'package:techcoder_real_easte/screen/map_screen.dart';
 import 'package:techcoder_real_easte/screen/setting_screen.dart';
 
 import '../utils/themeclass.dart';
+import 'chat_list_screen.dart';
 import 'home_screen.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -20,6 +21,7 @@ class _DashboardPageState extends State<DashboardPage> {
       body: [
         HomeScreen(),
         SavedScreen(),
+        ChatListScreen(),
         SettingScreen(),
       ][currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -46,7 +48,15 @@ class _DashboardPageState extends State<DashboardPage> {
               color: ThemeClass.primaryColor,
             ),
             icon: Icon(Icons.bookmark),
-            label: 'Completed Quiz',
+            label: 'Saved  Properties',
+          ),
+          BottomNavigationBarItem(
+            activeIcon: Icon(
+              Icons.chat,
+              color: ThemeClass.primaryColor,
+            ),
+            icon: Icon(Icons.chat),
+            label: 'Messages',
           ),
           BottomNavigationBarItem(
             activeIcon: Icon(

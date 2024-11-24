@@ -68,7 +68,8 @@ class T13FilterScreenState extends State<T13FilterScreen> {
                 children: <Widget>[
                   Text(
                     "BedRoom",
-                    style: primaryTextStyle(weight: FontWeight.w400),
+                    style: boldTextStyle(
+                        weight: FontWeight.w600, color: Colors.black),
                   ),
                   Row(
                     children: <Widget>[
@@ -105,9 +106,7 @@ class T13FilterScreenState extends State<T13FilterScreen> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
+            SizedBox(height: 10),
             Container(
               padding: EdgeInsets.all(8),
               height: 60,
@@ -120,46 +119,59 @@ class T13FilterScreenState extends State<T13FilterScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Bathroom",
-                    style: primaryTextStyle(weight: FontWeight.w400),
+                    "City",
+                    style: boldTextStyle(
+                        weight: FontWeight.w600, color: Colors.black),
                   ),
                   Row(
                     children: <Widget>[
                       GestureDetector(
                         child: Icon(
-                          Icons.remove_circle_outline,
+                          Icons.arrow_drop_down,
                           color: Colors.grey,
                         ),
                         onTap: () {
-                          if (totalBadRooms == 1 || totalBadRooms < 1) {
-                            totalBadRooms = 1;
-                          } else {
-                            totalBadRooms = totalBadRooms - 1;
-                          }
                           setState(() {});
                         },
                       ),
-                      Container(
-                        margin: EdgeInsets.only(left: 10, right: 10),
-                        child: Text(totalBadRooms.toString()),
-                      ),
-                      GestureDetector(
-                        child: Icon(
-                          Icons.add_circle_outline,
-                          color: Colors.grey,
-                        ),
-                        onTap: () {
-                          totalBadRooms = totalBadRooms + 1;
-                          setState(() {});
-                        },
-                      )
                     ],
                   )
                 ],
               ),
             ),
-            SizedBox(height: 20),
-            SizedBox(height: 20)
+            SizedBox(height: 10),
+            Container(
+              padding: EdgeInsets.all(8),
+              height: 60,
+              decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey,
+                  ),
+                  borderRadius: BorderRadius.circular(12)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "Select Property Type",
+                    style: boldTextStyle(
+                        weight: FontWeight.w600, color: Colors.black),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      GestureDetector(
+                        child: Icon(
+                          Icons.arrow_drop_down,
+                          color: Colors.grey,
+                        ),
+                        onTap: () {
+                          setState(() {});
+                        },
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),

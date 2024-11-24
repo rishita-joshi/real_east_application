@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:techcoder_real_easte/utils/text_style.dart';
 
+import '../utils/themeclass.dart';
 import 'text_box_widget.dart';
 
 class FavouriteProperty extends StatelessWidget {
@@ -99,6 +100,43 @@ class RecentlyAdded extends StatelessWidget {
               style: primaryTextStyle(),
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class SuggestionComponents extends StatefulWidget {
+  const SuggestionComponents({super.key});
+
+  @override
+  State<SuggestionComponents> createState() => _SuggestionComponentsState();
+}
+
+class _SuggestionComponentsState extends State<SuggestionComponents> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          border: Border.all(
+        color: ThemeClass.primaryColor,
+        width: 1,
+      )),
+      padding: EdgeInsets.all(10),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          SizedBox(width: 6),
+          Icon(
+            Icons.apartment,
+          ),
+          SizedBox(width: 6),
+          Text(
+            "ApartMents",
+            style: primaryTextStyle(),
+          )
         ],
       ),
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:techcoder_real_easte/components/submit_components.dart';
 import 'package:techcoder_real_easte/screen/dashboard_screen.dart';
+import 'package:techcoder_real_easte/screen/otp_screen.dart';
 import 'package:techcoder_real_easte/utils/text_style.dart';
 
 import '../components/text_box_widget.dart';
@@ -78,7 +79,15 @@ class _SignUpPageState extends State<SignUpPage> {
                 inputType: TextInputType.visiblePassword,
               ),
               SizedBox(height: 40),
-              SubmitComponents(textContent: "Sign Up", onPressed: () {})
+              SubmitComponents(
+                  textContent: "Sign Up",
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const OtpFillScreen()),
+                    );
+                  })
             ],
           ),
         ),

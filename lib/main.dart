@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:techcoder_real_easte/utils/themeclass.dart';
 
 import 'screen/splash_screen.dart';
+import 'store/MyAppStore.dart';
+
+MyAppStore appStore = MyAppStore();
 
 void main() {
   runApp(const MyApp());

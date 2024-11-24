@@ -26,7 +26,7 @@ class SettingScreen extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 16.0),
       alignment: FractionalOffset.center,
       child: CircleAvatar(
-        backgroundImage: AssetImage(""),
+        backgroundImage: AssetImage("assets/person_3.jpg"),
         radius: 50,
       ),
     );
@@ -49,7 +49,7 @@ class SettingScreen extends StatelessWidget {
             ),
             Text(
               "Max@gmail.com",
-              style: primaryTextStyle(color: ThemeClass.primaryColor),
+              style: boldTextStyle(color: ThemeClass.primaryColor),
             ),
           ],
         ),

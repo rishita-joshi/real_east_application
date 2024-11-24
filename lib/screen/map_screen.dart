@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:techcoder_real_easte/utils/text_style.dart';
 import 'package:techcoder_real_easte/utils/themeclass.dart';
 
