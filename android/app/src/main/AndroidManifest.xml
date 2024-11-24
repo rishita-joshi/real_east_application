@@ -3,7 +3,7 @@
 
     <application
     
-        android:label="techcoder_real_easte"
+        android:label="TechCoderProperty"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

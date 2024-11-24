@@ -45,6 +45,12 @@ dependencies:
   mobx_codegen: ^2.6.2
   build_runner:
 
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/ic_launcher.png"
+  min_sdk_android: 21
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

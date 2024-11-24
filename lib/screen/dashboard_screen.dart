@@ -56,7 +56,7 @@ class _DashboardPageState extends State<DashboardPage> {
               color: ThemeClass.primaryColor,
             ),
             icon: Icon(Icons.chat),
-            label: 'Messages',
+            label: '',
           ),
           BottomNavigationBarItem(
             activeIcon: Icon(
